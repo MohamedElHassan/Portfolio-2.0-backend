@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "mu7ammadelhassan_portfolio"
+  },
+  "api": {
+    "projectId": "yl7ea3v6",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
